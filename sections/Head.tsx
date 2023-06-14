@@ -10,12 +10,12 @@ export interface Props {
 }
 
 export default function HeadComponent({
-  title = "deco.cx — starter site",
-  description = "Deliver complete commerce experiences — start here!",
-  url = "https://start.deco.site",
-  imageUrl = "https://deco.cx/images/deco-logo-light.png",
+  title = "lab.capital 🔬 | lab.capital",
+  description = "Um simpático trio de investidores anjos. Somos empreendedores de tecnologia: Paulo Silveira, Lincoln Ando e Rodrigo Dantas. Investimos em times e ideias que conhecem nosso trabalho.",
+  url = "https://deco-sites-labcapital.deno.dev/",
+  imageUrl = "",
   faviconUrl = "",
-  themeColor = "#003232",
+  themeColor = "#151515",
 }: Props) {
   return (
     <Head>

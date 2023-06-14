@@ -25,6 +25,11 @@ function GlobalTags() {
         href={asset("/favicon-32x32.png")}
       />
 
+      <link
+        href="https://fonts.cdnfonts.com/css/helvetica-2"
+        rel="stylesheet"
+      />
+
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
     </Head>
