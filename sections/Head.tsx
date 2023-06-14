@@ -11,7 +11,8 @@ export interface Props {
 
 export default function HeadComponent({
   title = "lab.capital 🔬 | lab.capital",
-  description = "Um simpático trio de investidores anjos. Somos empreendedores de tecnologia: Paulo Silveira, Lincoln Ando e Rodrigo Dantas. Investimos em times e ideias que conhecem nosso trabalho.",
+  description =
+    "Um simpático trio de investidores anjos. Somos empreendedores de tecnologia: Paulo Silveira, Lincoln Ando e Rodrigo Dantas. Investimos em times e ideias que conhecem nosso trabalho.",
   url = "https://deco-sites-labcapital.deno.dev/",
   imageUrl = "",
   faviconUrl = "",
