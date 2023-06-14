@@ -76,6 +76,7 @@
               "deco-sites/labcapital/sections/GetStarted.tsx",
               "deco-sites/labcapital/sections/Head.tsx",
               "deco-sites/labcapital/sections/Header.tsx",
+              "deco-sites/labcapital/sections/Main.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
@@ -7544,6 +7545,24 @@
       ],
       "title": "deco-sites/labcapital/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "deco-sites/labcapital/sections/Main.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
       "properties": {
@@ -8153,7 +8172,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|e6fa52b10c3bccbf70230d2ef9b371dd": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6acb1783f1ea96dee394b84784b60bb3|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -8171,13 +8190,13 @@
           ]
         }
       ],
-      "title": "WorkflowRef|e6fa52b10c3bccbf70230d2ef9b371dd"
+      "title": "6acb1783f1ea96dee394b84784b60bb3|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|e6fa52b10c3bccbf70230d2ef9b371dd",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6acb1783f1ea96dee394b84784b60bb3|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -9947,6 +9966,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4": {
+      "title": "deco-sites/labcapital/sections/Main.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/Main.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/Main.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA==": {
       "title": "deco-sites/std/sections/Analytics.tsx",
       "type": "object",
@@ -11081,6 +11121,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
         },
         {
@@ -11241,7 +11284,8 @@
       "required": [
         "./routes/_middleware.ts",
         "./routes/[...catchall].tsx",
-        "./routes/index.tsx"
+        "./routes/index.tsx",
+        "./routes/live/previews/index.tsx"
       ],
       "properties": {
         "./routes/_middleware.ts": {
@@ -11262,6 +11306,13 @@
           "anyOf": [
             {
               "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
+            }
+          ]
+        },
+        "./routes/live/previews/index.tsx": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page"
             }
           ]
         }

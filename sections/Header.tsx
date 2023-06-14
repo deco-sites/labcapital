@@ -10,8 +10,8 @@ export interface Props {
 
 export default function Header({ title }: Props) {
   return (
-    <header class="bg-primary py-[20px] border-dashed border-b-2 border-secondary">
-      <section class="mx-auto max-w-sm">
+    <header class="py-[20px] border-dashed border-b-[1px] border-secondary">
+      <section class="mx-auto max-w-[1000px] w-[90%]">
         <h1 class="before:content-['./'] before:mr-2 before:text-[24px] text-secondary text-[30px] font-[700]">
           {title}
         </h1>

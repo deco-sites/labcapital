@@ -32,6 +32,19 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+      <style>
+        {`
+        a {
+          color: #63c0f5;
+          text-decoration: underline;
+        }
+
+        body {
+          background: #151515 url('https://lab.capital/assets/images/bkg.png') 0 0;
+        }
+      `}
+      </style>
     </Head>
   );
 }
