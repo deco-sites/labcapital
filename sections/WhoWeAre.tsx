@@ -30,15 +30,15 @@ export default function WhoWeAre({ title, infoObject, ...rest }: Props) {
                 >
                 </code>
                 <Image
-                    className="mb-[20px]"
-                    src={item.image}
-                    sizes="(maxWidth: 300px) 100vw, 300px"
-                    width={300}
-                    height={300}
-                    loading="eager"
-                    decoding="async"
-                    fetchPriority="high"
-                    preload
+                  className="mb-[20px]"
+                  src={item.image}
+                  sizes="(maxWidth: 300px) 100vw, 300px"
+                  width={300}
+                  height={300}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  preload
                 />
               </div>
             );
