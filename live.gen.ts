@@ -8,10 +8,15 @@ import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$$$$0 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$2 from "./sections/Head.tsx";
-import * as $$$$$$$$3 from "./sections/Header.tsx";
-import * as $$$$$$$$4 from "./sections/Main.tsx";
+import * as $$$$$$$$1 from "./sections/Exits.tsx";
+import * as $$$$$$$$2 from "./sections/FAQ.tsx";
+import * as $$$$$$$$3 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$4 from "./sections/Head.tsx";
+import * as $$$$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$$$6 from "./sections/Inactives.tsx";
+import * as $$$$$$$$7 from "./sections/Main.tsx";
+import * as $$$$$$$$8 from "./sections/Portfolio.tsx";
+import * as $$$$$$$$9 from "./sections/WhoWeAre.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -177,10 +182,15 @@ const manifest = {
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
     "deco-sites/labcapital/sections/DesignSystem.tsx": $$$$$$$$0,
-    "deco-sites/labcapital/sections/GetStarted.tsx": $$$$$$$$1,
-    "deco-sites/labcapital/sections/Head.tsx": $$$$$$$$2,
-    "deco-sites/labcapital/sections/Header.tsx": $$$$$$$$3,
-    "deco-sites/labcapital/sections/Main.tsx": $$$$$$$$4,
+    "deco-sites/labcapital/sections/Exits.tsx": $$$$$$$$1,
+    "deco-sites/labcapital/sections/FAQ.tsx": $$$$$$$$2,
+    "deco-sites/labcapital/sections/GetStarted.tsx": $$$$$$$$3,
+    "deco-sites/labcapital/sections/Head.tsx": $$$$$$$$4,
+    "deco-sites/labcapital/sections/Header.tsx": $$$$$$$$5,
+    "deco-sites/labcapital/sections/Inactives.tsx": $$$$$$$$6,
+    "deco-sites/labcapital/sections/Main.tsx": $$$$$$$$7,
+    "deco-sites/labcapital/sections/Portfolio.tsx": $$$$$$$$8,
+    "deco-sites/labcapital/sections/WhoWeAre.tsx": $$$$$$$$9,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,

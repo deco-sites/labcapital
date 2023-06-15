@@ -73,10 +73,15 @@
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
               "deco-sites/labcapital/sections/DesignSystem.tsx",
+              "deco-sites/labcapital/sections/Exits.tsx",
+              "deco-sites/labcapital/sections/FAQ.tsx",
               "deco-sites/labcapital/sections/GetStarted.tsx",
               "deco-sites/labcapital/sections/Head.tsx",
               "deco-sites/labcapital/sections/Header.tsx",
+              "deco-sites/labcapital/sections/Inactives.tsx",
               "deco-sites/labcapital/sections/Main.tsx",
+              "deco-sites/labcapital/sections/Portfolio.tsx",
+              "deco-sites/labcapital/sections/WhoWeAre.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
@@ -7478,6 +7483,60 @@
       "required": [],
       "title": "deco-sites/labcapital/sections/DesignSystem.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0V4aXRzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "textArray": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Text Array"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/labcapital/sections/Exits.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0ZBUS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "infoObject": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "text": {
+                "type": "string",
+                "title": "Text"
+              }
+            },
+            "required": [
+              "title",
+              "text"
+            ]
+          },
+          "title": "Info Object"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/labcapital/sections/FAQ.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -7545,6 +7604,26 @@
       ],
       "title": "deco-sites/labcapital/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0luYWN0aXZlcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "textArray": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Text Array"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/labcapital/sections/Inactives.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4@Props": {
       "type": "object",
       "properties": {
@@ -7562,6 +7641,65 @@
         "text"
       ],
       "title": "deco-sites/labcapital/sections/Main.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1BvcnRmb2xpby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "textArray": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Text Array"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/labcapital/sections/Portfolio.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1dob1dlQXJlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "infoObject": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "text": {
+                "type": "string",
+                "title": "Text"
+              },
+              "image": {
+                "type": "string",
+                "title": "Image"
+              }
+            },
+            "required": [
+              "title",
+              "text",
+              "image"
+            ]
+          },
+          "title": "Info Object"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/labcapital/sections/WhoWeAre.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
@@ -9903,6 +10041,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0V4aXRzLnRzeA==": {
+      "title": "deco-sites/labcapital/sections/Exits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0V4aXRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/Exits.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/Exits.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0ZBUS50c3g=": {
+      "title": "deco-sites/labcapital/sections/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0ZBUS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/FAQ.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/FAQ.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
       "title": "deco-sites/labcapital/sections/GetStarted.tsx",
       "type": "object",
@@ -9966,6 +10146,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0luYWN0aXZlcy50c3g=": {
+      "title": "deco-sites/labcapital/sections/Inactives.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0luYWN0aXZlcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/Inactives.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/Inactives.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4": {
       "title": "deco-sites/labcapital/sections/Main.tsx",
       "type": "object",
@@ -9984,6 +10185,48 @@
             "deco-sites/labcapital/sections/Main.tsx"
           ],
           "default": "deco-sites/labcapital/sections/Main.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1BvcnRmb2xpby50c3g=": {
+      "title": "deco-sites/labcapital/sections/Portfolio.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1BvcnRmb2xpby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/Portfolio.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/Portfolio.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1dob1dlQXJlLnRzeA==": {
+      "title": "deco-sites/labcapital/sections/WhoWeAre.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1dob1dlQXJlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/labcapital/sections/WhoWeAre.tsx"
+          ],
+          "default": "deco-sites/labcapital/sections/WhoWeAre.tsx"
         }
       }
     },
@@ -11112,6 +11355,12 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0Rlc2lnblN5c3RlbS50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0V4aXRzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0ZBUS50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"
         },
         {
@@ -11121,7 +11370,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL0luYWN0aXZlcy50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL01haW4udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1BvcnRmb2xpby50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9sYWJjYXBpdGFsL3NlY3Rpb25zL1dob1dlQXJlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
