@@ -17,7 +17,7 @@ export default function FAQ({ title, infoObject, ...rest }: Props) {
           {infoObject?.map((item, index) => {
             return (
               <div className="flex flex-col" tabIndex={index}>
-                <h3 className="text-secondary text-[18px] md:text-[24px] font-normal mb-[15px] text-[#b5e853]">
+                <h3 className="text-secondary text-[18px] font-normal mb-[15px] text-[#b5e853]">
                   {item.title}
                 </h3>
                 <p
