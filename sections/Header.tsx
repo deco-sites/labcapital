@@ -17,11 +17,8 @@ export default function Header({ title }: Props) {
         </h1>
         <a
           href="https://github.com/peas/lab.capital"
-          class="m-0 h-[40px] w-[fit-content] items-center justify-center flex no-underline text-[13px] text-[#fff] font-[700] rounded-[50px] shadow-[0px 1px 2px rgba(0,0,0,0.2)] hover:shadow-[0px 1px 2px rgba(0,0,0,0.4)] transition-[all 0.2s ease-in-out] border-2 border-black"
+          class="m-0 h-[40px] w-[fit-content] items-center justify-center flex no-underline text-[13px] text-[#fff] font-[700] rounded-[50px] shadow-[0px 1px 2px rgba(0,0,0,0.2)] hover:shadow-[0px 1px 2px rgba(0,0,0,0.4)] transition-[all 0.2s ease-in-out] border-2 border-black bg-gradient-to-b from-[#282828] to-[#00000045] via-[#0a0a0a70] hover:bg-gradient-to-b hover:from-[#242424] hover:to-[#0000009a] hover:via-[#0a0a0a70] py-[8px] px-[18px] "
           style={{
-            "background":
-              "-webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3))",
-            "padding": "8px 18px",
             "border-bottom": "2px solid rgba(0,0,0,0.7)",
             "border-top": "2px solid #000",
             "font-family": "Helvetica, Arial, sans-serif",
@@ -29,7 +26,7 @@ export default function Header({ title }: Props) {
         >
           <span class="bg-[url('https://lab.capital/assets/images/blacktocat.png')] w-[16px] h-[16px] inline-block opacity-[0.6] mt-[1px] mr-[8px] ">
           </span>
-          View on Github
+          View on GitHub
         </a>
       </section>
     </header>

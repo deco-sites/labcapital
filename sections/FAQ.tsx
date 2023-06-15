@@ -21,7 +21,7 @@ export default function FAQ({ title, infoObject, ...rest }: Props) {
                   {item.title}
                 </h3>
                 <p
-                  className="text-white text-[16px] md:text-[18px] mb-[30px]"
+                  className="text-white text-[16px] md:text-[16px] mb-[30px]"
                   dangerouslySetInnerHTML={{ __html: item.text }}
                 >
                 </p>

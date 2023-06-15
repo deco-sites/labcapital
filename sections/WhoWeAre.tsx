@@ -1,3 +1,6 @@
+import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
 export interface Props {
   title: string;
   infoObject?: {
@@ -22,14 +25,20 @@ export default function WhoWeAre({ title, infoObject, ...rest }: Props) {
                   {item.title}
                 </h2>
                 <code
-                  className="bg-black text-white p-[20px] mb-[30px] whitespace-nowrap overflow-x-auto md:whitespace-normal"
+                  className="bg-black text-[#d0d0d0] p-[10px] mb-[30px] whitespace-nowrap overflow-x-auto md:whitespace-normal"
                   dangerouslySetInnerHTML={{ __html: item.text }}
                 >
                 </code>
-                <img
-                  src={item.image}
-                  alt="image"
-                  className={"w-[300px] mb-[30px]"}
+                <Image
+                    className="mb-[20px]"
+                    src={item.image}
+                    sizes="(maxWidth: 300px) 100vw, 300px"
+                    width={300}
+                    height={300}
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    preload
                 />
               </div>
             );
